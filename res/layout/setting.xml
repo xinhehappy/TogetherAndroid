@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <include
+        android:id="@+id/title_bar_setting"
+        layout="@layout/title_bar_setting" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar_setting"
+        android:layout_margin="10dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/setting_btn_changeaccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/changeaccount" />
+        
+         <Button
+            android:id="@+id/setting_btn_modifyuserpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_below="@id/setting_btn_changeaccount"
+            android:text="@string/modify_pwd" />
+
+        <Button
+            android:id="@+id/setting_btn_myinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_btn_modifyuserpwd"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/myinfo" />
+
+        <Button
+            android:id="@+id/setting_btn_help"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_btn_myinfo"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/help" />
+
+        <Button
+            android:id="@+id/setting_btn_aboutus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_btn_help"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/aboutus" />
+    </RelativeLayout>
+
+</RelativeLayout>

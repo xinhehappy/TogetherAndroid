@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/addparty_title"
+        layout="@layout/title_bar_addparty" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addparty_title"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/addparty_relativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dip" >
+
+            <TextView
+                android:id="@+id/tv_partysetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="聚会详细设置"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/addparty_linearlayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_partysetting"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/shape_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/addparty_ll1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="聚会名称"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_newpartyname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:text="点此输入聚会名称"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/newpartyname_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/preview_goarrows_icon" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:id="@+id/addparty_ll2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="聚会时间"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_newjuhuitime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:text="点此设置聚会时间"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/newjuhuitime_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/preview_goarrows_icon" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:id="@+id/addparty_ll3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="聚会地点"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_newjuhuiaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:text="点此设置聚会地点"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/partylocation_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/location_icon_selecter" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:id="@+id/addparty_ll4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="聚会成员"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_newpartymember"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:text="聚会创建后才可邀请"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:id="@+id/addparty_ll5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="聚会简介"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_newpartyintroduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:paddingLeft="10.0dip"
+                        android:text="点此输入聚会简介"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/newintroduction_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/preview_goarrows_icon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addparty_ok"
+                android:layout_width="140dip"
+                android:layout_height="50dip"
+                android:layout_alignLeft="@id/addparty_linearlayout01"
+                android:layout_below="@id/addparty_linearlayout01"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/shape_bg"
+                android:gravity="center"
+                android:text="确认发起"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/addparty_cancel"
+                android:layout_width="140dip"
+                android:layout_height="50dip"
+                android:layout_alignRight="@id/addparty_linearlayout01"
+                android:layout_below="@id/addparty_linearlayout01"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/shape_bg"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

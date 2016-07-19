@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.hust.together.ui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#4400ff00"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/friendinfo_title"
+        layout="@layout/title_bar_friendinfo" />
+
+    <RelativeLayout
+        android:id="@+id/widget205"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/friendinfo_title"
+        android:background="@drawable/jingxuan002"
+        android:paddingLeft="10dp" >
+
+        <com.hust.together.myview.RoundAngleImageView
+            android:id="@+id/img_touxiang"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/msi"
+            app:roundHeight="10dip"
+            app:roundWidth="10dip" />
+
+        <TextView
+            android:id="@+id/friendinfo_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_touxiang"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/img_touxiang"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/friendinfo_iv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/friendinfo_tv_id"
+            android:layout_alignTop="@id/friendinfo_tv_id"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/friendinfo_tv_id"
+            android:src="@drawable/user_info_male" />
+
+        <LinearLayout
+            android:id="@+id/ll_intro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_touxiang"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/friendinfo_tv_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="简介：逝去的就让它他逝去吧,留下的只能是回忆."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            
+            <ImageView
+                android:id="@+id/intro_more"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/preview_goarrows_icon" />
+
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/sv_friendinfo_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/widget205"
+        android:background="#EAEAEA"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/rl_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/userinfo_apps_background"
+                android:gravity="center"
+                android:text="详细\n资料" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/btn1"
+                android:background="@drawable/userinfo_apps_background"
+                android:gravity="center"
+                android:text="54\n粉丝" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/btn2"
+                android:background="@drawable/userinfo_apps_background"
+                android:gravity="center"
+                android:text="106\n关注" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/btn3"
+                android:background="@drawable/userinfo_apps_background"
+                android:gravity="center"
+                android:text="23\n赞" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/btn4"
+                android:background="@drawable/userinfo_apps_background"
+                android:gravity="center"
+                android:text="足迹" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/btn5"
+                android:background="@drawable/userinfo_apps_background"
+                android:gravity="center"
+                android:text="Call me！" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/bottomline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sv_friendinfo_btns"
+        android:src="@drawable/suggestion_line" />
+
+    <TextView
+        android:id="@+id/test1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomline1"
+        android:paddingTop="5dp"
+        android:text="这里之后改为listview用于显示该用户的新鲜事动态等\n呵呵\n哈哈\n嘿嘿\n喂喂\n你妹啊" />
+
+</RelativeLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/partyinfo_title"
+        layout="@layout/title_bar_partyinfo" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/partyinfo_title"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/partyinfo_relativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_partyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="随心所聚两人庆功宴"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/partyinfo_linearlayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_partyname"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/shape_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="发起人"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_showfaqiren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:text="90夏天的风"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/faqiren_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/preview_goarrows_icon" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="发起时间"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_showfaqitime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@android:color/white"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:text="2013-05-04 17:15:34"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="聚会时间"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_showjuhuitime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15.0dip"
+                        android:background="@android:color/white"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:text="2013-05-24 11:00:00"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_getpartyloc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="聚会地点"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_showjuhuiaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:text="华中科技大学百景园"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/partylocation_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/location_icon_selecter" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_getmemberlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="聚会成员"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_showpartymember"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:text="点此查看聚会成员"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/member_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/preview_goarrows_icon" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="聚会简介"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_showpartyintroduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:paddingLeft="10.0dip"
+                        android:text="随心所聚项目完成了，值得庆祝！大学也将结束，离别之际聚个会"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

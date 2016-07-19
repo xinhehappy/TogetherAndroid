@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <include
+        android:id="@+id/title_bar_register"
+        layout="@layout/title_bar_register" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_below="@+id/title_bar_register"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/rl_register_back"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/tv_register_mail"
+            android:layout_width="60dip"
+            android:layout_height="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="left"
+            android:text="@string/register_tv_username"
+            android:textColor="#ff000000" />
+
+        <EditText
+            android:id="@+id/et_register_mail"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_register_mail"
+            android:layout_alignTop="@+id/tv_register_mail"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/iv_register_head"
+            android:layout_toRightOf="@+id/tv_register_mail"
+            android:background="@null"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignBottom="@+id/et_register_mail"
+            android:layout_alignLeft="@+id/et_register_mail"
+            android:layout_alignRight="@+id/et_register_mail"
+            android:background="#ff000000" />
+
+        <TextView
+            android:id="@+id/tv_register_pwd"
+            android:layout_width="60dip"
+            android:layout_height="20dip"
+            android:layout_alignLeft="@+id/tv_register_mail"
+            android:layout_below="@+id/tv_register_mail"
+            android:layout_marginTop="15dip"
+            android:gravity="left"
+            android:text="@string/register_tv_password"
+            android:textColor="#ff000000" />
+
+        <EditText
+            android:id="@+id/et_register_pwd"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_register_pwd"
+            android:layout_alignTop="@+id/tv_register_pwd"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/iv_register_head"
+            android:layout_toRightOf="@+id/tv_register_pwd"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignBottom="@+id/et_register_pwd"
+            android:layout_alignLeft="@+id/et_register_pwd"
+            android:layout_alignRight="@+id/et_register_pwd"
+            android:background="#ff000000" />
+
+        <ImageView
+            android:id="@+id/iv_register_head"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:contentDescription="@string/user_avator"
+            android:src="@drawable/iv_regist_head" />
+
+        <TextView
+            android:id="@+id/tv_register_pwd2"
+            android:layout_width="60dip"
+            android:layout_height="20dip"
+            android:layout_alignLeft="@+id/tv_register_mail"
+            android:layout_below="@+id/tv_register_pwd"
+            android:layout_marginTop="15dip"
+            android:gravity="left"
+            android:text="@string/register_tv_password_confirm"
+            android:textColor="#ff000000" />
+
+        <EditText
+            android:id="@+id/et_register_pwd2"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_register_pwd2"
+            android:layout_alignTop="@+id/tv_register_pwd2"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/tv_register_pwd2"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignBottom="@+id/et_register_pwd2"
+            android:layout_alignLeft="@+id/et_register_pwd2"
+            android:layout_alignRight="@+id/et_register_pwd2"
+            android:background="#ff000000" />
+
+        <!--
+	        <TextView 
+	        android:id="@+id/tv_register_name" 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="20dip"
+	        android:text="姓名"
+	        android:gravity="center"
+	        android:layout_below="@+id/tv_register_pwd2"
+	        android:layout_alignLeft="@+id/tv_register_mail"
+	        android:layout_marginTop="15dip"
+	        android:textColor="#ff000000"/>
+	        <EditText 
+	       	android:id="@+id/et_register_name"
+	        android:layout_width="80dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_toRightOf="@+id/tv_register_name"
+	        android:layout_alignTop="@+id/tv_register_name"
+	        android:layout_alignBottom="@+id/tv_register_name"
+	        android:background="@null"
+	        android:singleLine="true"/>
+	        <View
+	        android:layout_alignLeft="@+id/et_register_name"
+	        android:layout_alignRight="@+id/et_register_name"
+	        android:layout_alignBottom="@+id/et_register_name"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ff000000" />
+	        <RadioGroup 
+   		    android:id="@+id/rg_register_sex"
+   		    android:orientation="horizontal"
+   		    android:layout_alignTop="@+id/tv_register_name"
+   		    android:layout_alignBottom="@+id/tv_register_name"
+   		    android:layout_toRightOf="@+id/et_register_name"
+   		    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content" >
+   		    
+   		   <RadioButton 
+   		       android:id="@+id/rb__register_male"
+   		       android:text="男"
+   		       android:textColor="#ff000000"
+   		       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+			   android:layout_marginLeft="10dip"
+    	       android:button="@drawable/rb_personinfo_check"
+    	       android:checked="true"/>
+   		   
+   		   <RadioButton 
+   		       android:id="@+id/rb_register_female"
+   		       android:text="女"
+   		       android:textColor="#ff000000"
+   		       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_marginLeft="15dip"
+    	       android:button="@drawable/rb_personinfo_check"/> 
+   		</RadioGroup>
+   		
+	    <TextView 
+	        android:id="@+id/tv_register_tel" 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="20dip"
+	        android:text="电话"
+	        android:gravity="center"
+	        android:layout_below="@+id/tv_register_name"
+	        android:layout_alignLeft="@+id/tv_register_mail"
+	        android:layout_marginTop="15dip"
+	        android:textColor="#ff000000"	/>
+	     
+	    <EditText 
+	       	android:id="@+id/et_register_tel"
+	        android:layout_width="150dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_toRightOf="@+id/tv_register_tel"	        
+	        android:layout_alignTop="@+id/tv_register_tel"
+	        android:layout_alignBottom="@+id/tv_register_tel"
+	        android:background="@null"
+	        android:singleLine="true"/>
+	     <View
+	        android:layout_alignLeft="@+id/et_register_tel"
+	        android:layout_alignRight="@+id/et_register_tel"
+	        android:layout_alignBottom="@+id/et_register_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ff000000" />        -->
+    </RelativeLayout>
+
+</RelativeLayout>

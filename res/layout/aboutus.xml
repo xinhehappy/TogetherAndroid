@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <include
+        android:id="@+id/title_bar_aboutus"
+        layout="@layout/title_bar_aboutus" />
+
+    <RelativeLayout
+        android:id="@+id/aboutus_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar_aboutus" >
+
+        <ImageView
+            android:id="@+id/aboutus_iv_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="130dip"
+            android:contentDescription="@string/logo"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/aboutus_tv_version"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutus_iv_logo"
+            android:layout_marginBottom="5dip"
+            android:gravity="center"
+            android:text="@string/version"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/aboutus_tv_version"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="50dip"
+            android:background="#888888" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aboutus_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutus_layout1"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/background_div_bg" >
+
+        <TextView
+            android:id="@+id/aboutus_tv_developers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/aboutus_tv_developers"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aboutus_tv_developer1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutus_tv_developers"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/aboutus_tv_developer1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aboutus_tv_developer2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutus_tv_developer1"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/aboutus_tv_developer2"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/about_tv_thanks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/aboutus_layout2"
+        android:gravity="center"
+        android:text="@string/thanks" />
+
+</RelativeLayout>

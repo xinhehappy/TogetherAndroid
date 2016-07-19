@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/title_bar_historyparty"
+        layout="@layout/title_bar_historyparty" />
+
+    <ScrollView
+        android:id="@+id/gv_historyparty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar_historyparty" >
+
+        <TextView
+            android:id="@+id/tv_historyparty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="此处为TextView，后应改为ListView用于显示历史聚会列表" >
+        </TextView>
+    </ScrollView>
+
+</RelativeLayout>

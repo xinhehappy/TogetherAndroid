@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="LoginServletUrl">http://202.38.84.29:8080/TogetherServer/LoginServlet</string>
+    <string name="RegisterServletUrl">http://202.38.84.29:8080/TogetherServer/RegisterServlet</string>
+
+    <string name="GetFriendListServletUrl">http://202.38.84.29:8080/TogetherServer/FriendServlet?type=1</string>
+    <string name="GetFriendInfoServletUrl">http://202.38.84.29:8080/TogetherServer/FriendServlet?type=2</string>
+    <string name="ModifyBeizhuServletUrl">http://202.38.84.29:8080/TogetherServer/FriendServlet?type=3</string>
+    <string name="SearchUserServletUrl">http://202.38.84.29:8080/TogetherServer/FriendServlet?type=4</string>
+    <string name="AddFriendServletUrl">http://202.38.84.29:8080/TogetherServer/FriendServlet?type=5</string>
+    <string name="DeleteFriendServletUrl">http://202.38.84.29:8080/TogetherServer/FriendServlet?type=6</string>
+    <string name="JudgeIsFriendServletUrl">http://202.38.84.29:8080/TogetherServer/FriendServlet?type=7</string>
+    
+    <string name="GetMyPartyServletUrl">http://202.38.84.29:8080/TogetherServer/PartyServlet?type=1</string>
+    <string name="GetPartyInfoServletUrl">http://202.38.84.29:8080/TogetherServer/PartyServlet?type=2</string>
+    <string name="AddPartyServletUrl">http://202.38.84.29:8080/TogetherServer/PartyServlet?type=3</string>
+    <string name="QuitPartyServletUrl">http://202.38.84.29:8080/TogetherServer/PartyServlet?type=4</string>
+    <string name="AddPartyMemberServletUrl">http://202.38.84.29:8080/TogetherServer/PartyServlet?type=5</string>
+    <string name="RemovePartyServletUrl">http://202.38.84.29:8080/TogetherServer/PartyServlet?type=6</string>
+    
+    <string name="UpdateUserLocServletUrl">http://202.38.84.29:8080/TogetherServer/UserServlet?type=1</string>
+    <string name="GetUserLocServletUrl">http://202.38.84.29:8080/TogetherServer/UserServlet?type=2</string>
+    <string name="ModifyUserInfoServletUrl">http://202.38.84.29:8080/TogetherServer/UserServlet?type=3</string>
+    <string name="ModifyUserPwdServletUrl">http://202.38.84.29:8080/TogetherServer/UserServlet?type=4</string>
+    
+    <string name="GetUnreadMessageServletUrl">http://202.38.84.29:8080/TogetherServer/MessageServlet?type=1</string>
+    <string name="GetHistoryMessageServletUrl">http://202.38.84.29:8080/TogetherServer/MessageServlet?type=2</string>
+    <string name="ChangeMessageStatusServletUrl">http://202.38.84.29:8080/TogetherServer/MessageServlet?type=3</string>
+</resources>
+
