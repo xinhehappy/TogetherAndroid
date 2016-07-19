@@ -18,7 +18,11 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.ImageView;
-
+/**
+ * 启动引导界面，当用户初次安装此应用时进行启动引导。
+ * @author adam
+ *
+ */
 public class GuideActivity extends Activity {
 	ViewPager viewPager;
 	ArrayList<View> list;
