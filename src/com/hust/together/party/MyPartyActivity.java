@@ -35,7 +35,6 @@ public class MyPartyActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onBackPressed() {
-		// TODO Auto-generated method stub
 		Intent intent = new Intent(MyPartyActivity.this,
 				MainActivity.class);
 		intent.putExtra("tabNum", "2");

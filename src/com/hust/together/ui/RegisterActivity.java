@@ -79,19 +79,19 @@ public class RegisterActivity extends Activity implements OnClickListener {
 
 		@Override
 		protected void onPostExecute(String result) {
-			if (result.equals("0")) {
-				toast.setText("该用户已存在！");
-				toast.show();
-				return;
-
-			} else {
-				toast.setText("注册成功！");
-				toast.show();
+//			if (result.equals("0")) {
+//				toast.setText("该用户已存在！");
+//				toast.show();
+//				return;
+//
+//			} else {
+//				toast.setText("注册成功！");
+//				toast.show();
 				Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
 				startActivity(intent);
 				finish();
-
-			}
+//
+//			}
 		}
 
 		@Override
