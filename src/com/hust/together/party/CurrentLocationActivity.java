@@ -317,9 +317,7 @@ public class CurrentLocationActivity extends Activity {
 				MainActivity.class);
 		intent.putExtra("tabNum", "2");
 		startActivity(intent);
-		finish();
 	}
-	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

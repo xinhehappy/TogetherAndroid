@@ -91,8 +91,8 @@ public class Myinfo extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-//				ModifyUserInfoTask modifyUserInfoTask = new ModifyUserInfoTask();
-//				modifyUserInfoTask.execute();
+				ModifyUserInfoTask modifyUserInfoTask = new ModifyUserInfoTask();
+				modifyUserInfoTask.execute();
 			}
 		});
 		
@@ -353,16 +353,16 @@ public class Myinfo extends Activity {
 		String url = getResources().getString(R.string.GetFriendInfoServletUrl);
 		@Override
 		protected void onPostExecute(JSONObject object) {
-//			try {
-//				intro.setText(object.getString("sign"));
-//				gender.setText(object.getString("gender"));
-//				addr.setText(object.getString("home"));
-//				birth.setText(object.getString("birthday"));
-//				email.setText(object.getString("email"));
-//			} catch (JSONException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
+			try {
+				intro.setText(object.getString("sign"));
+				gender.setText(object.getString("gender"));
+				addr.setText(object.getString("home"));
+				birth.setText(object.getString("birthday"));
+				email.setText(object.getString("email"));
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 
 		@Override
