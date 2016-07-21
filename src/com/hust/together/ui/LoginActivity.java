@@ -75,12 +75,12 @@ public class LoginActivity extends Activity implements OnClickListener {
 
 		@Override
 		protected void onPostExecute(String result) {
-			if (result.equals("0")) {
-				toast.setText("ÓÊÏä»òÃÜÂë´íÎó£¡");
-				toast.show();
-				return;
-
-			} else {
+//			if (result.equals("0")) {
+//				toast.setText("ÓÊÏä»òÃÜÂë´íÎó£¡");
+//				toast.show();
+//				return;
+//
+//			} else {
 				toast.setText("³É¹¦µÇÂ½£¡");
 				toast.show();
 				SharedPreTool.saveUserInfo(result,username,password,sp);
@@ -88,8 +88,8 @@ public class LoginActivity extends Activity implements OnClickListener {
 						MainActivity.class);
 				startActivity(intent);
 				finish();
-
-			}
+//
+//			}
 		}
 
 		@Override

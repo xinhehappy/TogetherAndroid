@@ -26,7 +26,7 @@ import com.hust.together.util.TogetherApplication;
 public class HomeActivity extends Activity implements
 		PullToRefresh.UpdateHandle {
 	PullToRefresh refresh;
-	private String names[] = { "唐佑冰", "肖旅","张昊林","张弛","辛贺","王郝"};
+	private String names[] = { "辛贺", "辛贺2","辛贺1","辛贺3","辛贺4","辛贺5"};
 	private String contents[] = { "随心所聚Android版项目正式验收了，大学也即将结束，而这对我而言一切才刚刚开始！", 
 			"随心所聚Android版项目验收了，大学也即将结束！",
 			"随心所聚Android版项目验收了，大学也即将结束！",

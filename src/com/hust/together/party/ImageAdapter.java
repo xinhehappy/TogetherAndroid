@@ -18,10 +18,10 @@ public class ImageAdapter extends BaseAdapter {
 		this.context = context;
 	}
 
-	private Integer[] images = { R.drawable.ic_launcher,
-			R.drawable.ic_launcher, R.drawable.ic_launcher,
-			R.drawable.ic_launcher, R.drawable.ic_launcher,
-			R.drawable.ic_launcher };
+	private Integer[] images = { R.drawable.my_party,
+			R.drawable.my_frient, R.drawable.my_city,
+			R.drawable.my_focus, R.drawable.my_history,
+			R.drawable.my_location };
 
 	private String[] texts = { "我的聚会", "好友聚会", "同城聚会", "关注聚会", "历史聚会", "目前位置" };
 

@@ -18,7 +18,7 @@
             android:id="@+id/tv_historyparty"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="此处为TextView，后应改为ListView用于显示历史聚会列表" >
+            android:text="" >
         </TextView>
     </ScrollView>
 
